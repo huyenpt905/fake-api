@@ -17,9 +17,9 @@
 					<tbody>
 						<tr *ngFor="let user of users">
 							<td>
-								<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+								<img [src]="user.avatar" alt="">
 								<a href="#" class="user-link">{{ user.name }}</a>
-								<span class="user-subhead">Admin</span>
+								<span class="user-subhead">{{ user.phone }}</span>
 							</td>
 							<td>
 								{{ user.birthday }}

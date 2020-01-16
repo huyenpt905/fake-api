@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { AddUserComponent } from './add-user/add-user.component';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { AddUserComponent } from './add-user/add-user.component';
     UserComponent,
     NotfoundComponent,
     AddUserComponent,
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,

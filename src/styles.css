@@ -1,4 +1,4 @@
-/* #loader {
+#loader {
   bottom: 0;
   height: 175px;
   left: 0;
@@ -131,4 +131,4 @@
 
 .spinner-message {
   text-align: center;
-} */
+}

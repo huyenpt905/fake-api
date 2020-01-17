@@ -7,15 +7,13 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { AddUserComponent } from './add-user/add-user.component';
-import { SpinnerComponent } from './spinner/spinner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     NotfoundComponent,
-    AddUserComponent,
-    SpinnerComponent,
+    AddUserComponent
   ],
   imports: [
     BrowserModule,

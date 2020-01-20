@@ -10,7 +10,7 @@ import { UserService } from "../service/user.service";
 export class UserComponent implements OnInit {
   private users: UserModel[];
   flag: boolean = false;
-  constructor(private userservice: UserService) {}
+  constructor(private userservice: UserService) { }
 
   ngOnInit() {
     this.userservice.getUsers().subscribe(
@@ -25,5 +25,15 @@ export class UserComponent implements OnInit {
         console.log("ERROR!!!");
       }
     );
+  }
+
+  deleteUser(id: number) {
+    this.userservice.deleteUser(id).subscribe(
+      () =>{ 
+        alert('Delete !');
+        window.location.reload()
+
+      }
+    )
   }
 }
